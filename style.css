@@ -1,0 +1,52 @@
+body {
+    font-family: Arial, sans-serif;
+    padding: 20px;
+    text-align: center;
+}
+
+button {
+    padding: 10px 20px;
+    margin: 10px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+}
+
+button:hover {
+    background-color: #45a049;
+    transform: scale(1.1);
+}
+
+button.animate {
+    animation: bounce 0.5s ease-out;
+}
+
+.gallery-image {
+    width: 100px;
+    height: 100px;
+    margin: 5px;
+    cursor: pointer;
+}
+
+@keyframes bounce {
+    0% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-15px);
+    }
+    100% {
+        transform: translateY(0);
+    }
+}
+
+form {
+    margin-top: 30px;
+}
+
+#emailFeedback {
+    color: red;
+    font-size: 12px;
+}
